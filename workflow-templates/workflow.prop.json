@@ -1,0 +1,35 @@
+{
+    "name": "Workflow Template",
+    "description": "A template for creating workflows",
+    "version": "1.0.0",
+    "categories": [
+        "Workflow",
+        "Template"
+    ],
+    "icon": "mdi:workflow",
+    "properties": {
+        "workflowName": {
+            "type": "string",
+            "title": "Workflow Name",
+            "description": "The name of the workflow",
+            "default": "New Workflow"
+        },
+        "steps": {
+            "type": "array",
+            "title": "Workflow Steps",
+            "description": "List of steps in the workflow",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "stepName": {
+                        "type": "string",
+                        "title": "Step Name"
+                    },
+                    "action": {
+                        "type": "string",
+                        "title": "Action"
+                    }
+                }
+            }
+        }
+    }
